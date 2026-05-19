@@ -1,0 +1,520 @@
+2026-05-13T15:52:51.012001Z NOTICE Starting pgloader, log system is ready.
+2026-05-13T15:52:51.024003Z LOG pgloader version "3.6.7~devel"
+2026-05-13T15:52:51.232027Z NOTICE Executing SQL block for before load
+2026-05-13T15:52:51.356042Z LOG Migrating from #<MYSQL-CONNECTION mysql://root@host.docker.internal:33066/rth {1007EA3AE3}>
+2026-05-13T15:52:51.356042Z LOG Migrating into #<PGSQL-CONNECTION pgsql://app@host.docker.internal:54321/rth_modern {1007EA4B93}>
+2026-05-13T15:52:51.500059Z ERROR mysql: Failed to connect to mysql at "host.docker.internal" (port 33066) as user "root": MySQL Error [1130]: "Host '172.22.0.1' is not allowed to connect to this MariaDB server"
+2026-05-13T15:52:51.500059Z LOG report summary reset
+2026-05-13T15:53:15.012001Z NOTICE Starting pgloader, log system is ready.
+2026-05-13T15:53:15.020002Z LOG pgloader version "3.6.7~devel"
+2026-05-13T15:53:15.168021Z NOTICE Executing SQL block for before load
+2026-05-13T15:53:15.260032Z LOG Migrating from #<MYSQL-CONNECTION mysql://root@host.docker.internal:33066/rth {1007EAB753}>
+2026-05-13T15:53:15.260032Z LOG Migrating into #<PGSQL-CONNECTION pgsql://app@host.docker.internal:54321/rth_modern {1007EAC803}>
+2026-05-13T15:53:15.712086Z NOTICE Prepare PostgreSQL database.
+2026-05-13T15:53:17.164265Z NOTICE Processing tables in this order: rth.bugcategory: 3 rows, rth.project_user_assoc: 3 rows, rth.requirement: 3 rows, rth.requirementdocumenttype: 3 rows, rth.requirementfunctionality_assoc: 3 rows, rth.requirementversion: 3 rows, rth.testenvironment: 3 rows, rth.testsuiteresults: 3 rows, rth."user": 3 rows, rth.bug: 2 rows, rth.bughistory: 2 rows, rth.manualdoctype: 2 rows, rth.testset_testsuite_assoc: 2 rows, rth.testsuite: 2 rows, rth.testsuite_requirement_assoc: 2 rows, rth.testversion: 2 rows, rth.build: 1 rows, rth.project: 1 rows, rth.release_tbl: 1 rows, rth.testset: 1 rows, rth.bugassoc: 0 rows, rth.bugfile: 0 rows, rth.bugmonitor: 0 rows, rth.bugnote: 0 rows, rth.discussion: 0 rows, rth.discussionpost: 0 rows, rth.feedback: 0 rows, rth.field_tbl: 0 rows, rth.function_tbl: 0 rows, rth.guichecktable: 0 rows, rth.individualrundocs: 0 rows, rth.issues: 0 rows, rth.manualtestdocs: 0 rows, rth.manualtestdocs_version: 0 rows, rth.news: 0 rows, rth.requirementnotifications: 0 rows, rth.requirementversion_release_assoc: 0 rows, rth.reset_password: 0 rows, rth.screen: 0 rows, rth.step_tbl: 0 rows, rth.testmachine: 0 rows, rth.testplan: 0 rows, rth.testplanversion: 0 rows, rth.teststatus: 0 rows, rth.testworkflow: 0 rows, rth.test_function_assoc: 0 rows
+2026-05-13T15:53:17.176266Z NOTICE COPY rth.logs with 13 rows estimated [7/8]
+2026-05-13T15:53:17.240274Z NOTICE COPY rth.teststep with 8 rows estimated [4/8]
+2026-05-13T15:53:17.272278Z NOTICE COPY rth.bugcomponent with 5 rows estimated [2/8]
+2026-05-13T15:53:17.312283Z NOTICE COPY rth.requirementfunctionality with 5 rows estimated [1/8]
+2026-05-13T15:53:17.332285Z NOTICE COPY rth.requirementareacoverage with 4 rows estimated [7/8]
+2026-05-13T15:53:17.348287Z NOTICE COPY rth.verifyresults with 4 rows estimated [1/8]
+2026-05-13T15:53:17.376291Z NOTICE COPY rth.bugcategory with 3 rows estimated [7/8]
+2026-05-13T15:53:17.392293Z NOTICE COPY rth.requirementdocumenttype with 3 rows estimated [1/8]
+2026-05-13T15:53:17.412295Z NOTICE COPY rth.requirementfunctionality_assoc with 3 rows estimated [7/8]
+2026-05-13T15:53:17.440298Z NOTICE COPY rth.testsuiteresults with 3 rows estimated [1/8]
+2026-05-13T15:53:17.488304Z NOTICE COPY rth."user" with 3 rows estimated [7/8]
+2026-05-13T15:53:17.516307Z NOTICE COPY rth.manualdoctype with 2 rows estimated [1/8]
+2026-05-13T15:53:17.536309Z NOTICE COPY rth.testarea with 4 rows estimated [5/8]
+2026-05-13T15:53:17.564313Z NOTICE COPY rth.testset_testsuite_assoc with 2 rows estimated [7/8]
+2026-05-13T15:53:17.580315Z NOTICE COPY rth.testversion with 2 rows estimated [1/8]
+2026-05-13T15:53:17.600317Z NOTICE COPY rth.testtype with 4 rows estimated [3/8]
+2026-05-13T15:53:17.616319Z NOTICE DONE copying rth.logs in 0.000s
+2026-05-13T15:53:17.616319Z NOTICE DONE copying rth.teststep in 0.000s
+2026-05-13T15:53:17.616319Z NOTICE DONE copying rth.requirementfunctionality in 0.000s
+2026-05-13T15:53:17.616319Z NOTICE COPY rth.testset with 1 rows estimated [1/8]
+2026-05-13T15:53:17.660325Z NOTICE COPY rth.project_user_assoc with 3 rows estimated [5/8]
+2026-05-13T15:53:17.684327Z NOTICE COPY rth.build with 1 rows estimated [7/8]
+2026-05-13T15:53:17.700329Z NOTICE COPY rth.requirement with 3 rows estimated [3/8]
+2026-05-13T15:53:17.720332Z NOTICE DONE copying rth.bugcomponent in 0.000s
+2026-05-13T15:53:17.724332Z NOTICE COPY rth.requirementversion with 3 rows estimated [5/8]
+2026-05-13T15:53:17.756336Z NOTICE COPY rth.bugnote with 0 rows estimated [1/8]
+2026-05-13T15:53:17.788340Z NOTICE COPY rth.bugassoc with 0 rows estimated [7/8]
+2026-05-13T15:53:17.808343Z NOTICE COPY rth.testenvironment with 3 rows estimated [3/8]
+2026-05-13T15:53:17.848348Z NOTICE DONE copying rth.testtype in 0.000s
+2026-05-13T15:53:17.848348Z NOTICE COPY rth.field_tbl with 0 rows estimated [1/8]
+2026-05-13T15:53:17.868350Z NOTICE DONE copying rth.testarea in 0.000s
+2026-05-13T15:53:17.868350Z NOTICE COPY rth.bug with 2 rows estimated [5/8]
+2026-05-13T15:53:17.888352Z NOTICE COPY rth.discussion with 0 rows estimated [7/8]
+2026-05-13T15:53:17.916356Z NOTICE COPY rth.bughistory with 2 rows estimated [3/8]
+2026-05-13T15:53:17.928357Z NOTICE COPY rth.testsuite with 2 rows estimated [5/8]
+2026-05-13T15:53:17.960361Z NOTICE COPY rth.issues with 0 rows estimated [1/8]
+2026-05-13T15:53:17.984364Z NOTICE COPY rth.testsuite_requirement_assoc with 2 rows estimated [3/8]
+2026-05-13T15:53:17.992366Z NOTICE COPY rth.function_tbl with 0 rows estimated [7/8]
+2026-05-13T15:53:18.016369Z NOTICE COPY rth.requirementnotifications with 0 rows estimated [1/8]
+2026-05-13T15:53:18.044373Z NOTICE COPY rth.project with 1 rows estimated [5/8]
+2026-05-13T15:53:18.068375Z NOTICE COPY rth.release_tbl with 1 rows estimated [3/8]
+2026-05-13T15:53:18.100379Z NOTICE COPY rth.manualtestdocs with 0 rows estimated [7/8]
+2026-05-13T15:53:18.148385Z NOTICE CREATE UNIQUE INDEX idx_16634_projectid ON rth.requirementfunctionality (projectid, functionalityname);
+2026-05-13T15:53:18.148385Z NOTICE CREATE UNIQUE INDEX idx_16634_primary ON rth.requirementfunctionality (functionalityid);
+2026-05-13T15:53:18.152386Z NOTICE CREATE UNIQUE INDEX idx_16511_primary ON rth.logs (logid);
+2026-05-13T15:53:18.152386Z NOTICE COPY rth.requirementversion_release_assoc with 0 rows estimated [7/8]
+2026-05-13T15:53:18.208393Z NOTICE COPY rth.step_tbl with 0 rows estimated [1/8]
+2026-05-13T15:53:18.232396Z NOTICE COPY rth.bugmonitor with 0 rows estimated [3/8]
+2026-05-13T15:53:18.276401Z NOTICE COPY rth.bugfile with 0 rows estimated [5/8]
+2026-05-13T15:53:18.328407Z NOTICE CREATE UNIQUE INDEX idx_16766_primary ON rth.teststep (teststepid);
+2026-05-13T15:53:18.328407Z NOTICE DONE copying rth.verifyresults in 0.000s
+2026-05-13T15:53:18.328407Z NOTICE COPY rth.feedback with 0 rows estimated [3/8]
+2026-05-13T15:53:18.372413Z NOTICE COPY rth.testmachine with 0 rows estimated [7/8]
+2026-05-13T15:53:18.448421Z NOTICE COPY rth.discussionpost with 0 rows estimated [5/8]
+2026-05-13T15:53:18.508428Z NOTICE DONE copying rth.requirementareacoverage in 0.000s
+2026-05-13T15:53:18.516429Z NOTICE COPY rth.teststatus with 0 rows estimated [1/8]
+2026-05-13T15:53:18.552434Z NOTICE COPY rth.individualrundocs with 0 rows estimated [3/8]
+2026-05-13T15:53:18.644445Z NOTICE COPY rth.testworkflow with 0 rows estimated [7/8]
+2026-05-13T15:53:18.684450Z NOTICE DONE copying rth.requirement in 0.000s
+2026-05-13T15:53:18.684450Z NOTICE COPY rth.guichecktable with 0 rows estimated [5/8]
+2026-05-13T15:53:18.724455Z NOTICE COPY rth.news with 0 rows estimated [3/8]
+2026-05-13T15:53:18.740457Z NOTICE COPY rth.manualtestdocs_version with 0 rows estimated [5/8]
+2026-05-13T15:53:18.776461Z NOTICE DONE copying rth.project_user_assoc in 0.000s
+2026-05-13T15:53:18.776461Z NOTICE COPY rth.screen with 0 rows estimated [3/8]
+2026-05-13T15:53:18.796464Z NOTICE COPY rth.reset_password with 0 rows estimated [5/8]
+2026-05-13T15:53:18.816466Z NOTICE COPY rth.testplanversion with 0 rows estimated [3/8]
+2026-05-13T15:53:18.828467Z NOTICE COPY rth.testplan with 0 rows estimated [5/8]
+2026-05-13T15:53:18.848470Z NOTICE CREATE UNIQUE INDEX idx_16848_primary ON rth.testtype (testtypeid);
+2026-05-13T15:53:18.848470Z NOTICE CREATE UNIQUE INDEX idx_16409_primary ON rth.bugcomponent (componentid);
+2026-05-13T15:53:18.848470Z NOTICE CREATE UNIQUE INDEX idx_16848_projectid ON rth.testtype (testtype, project_id);
+2026-05-13T15:53:18.848470Z NOTICE COPY rth.test_function_assoc with 0 rows estimated [5/8]
+2026-05-13T15:53:18.864472Z NOTICE DONE copying rth.bugcategory in 0.000s
+2026-05-13T15:53:18.864472Z NOTICE DONE copying rth.requirementdocumenttype in 0.000s
+2026-05-13T15:53:18.864472Z NOTICE CREATE UNIQUE INDEX idx_16409_projectid ON rth.bugcomponent (componentname, projectid);
+2026-05-13T15:53:18.864472Z NOTICE DONE copying rth.testsuiteresults in 0.000s
+2026-05-13T15:53:18.864472Z NOTICE DONE copying rth.bughistory in 0.000s
+2026-05-13T15:53:18.868472Z NOTICE DONE copying rth.requirementversion in 0.000s
+2026-05-13T15:53:18.868472Z NOTICE DONE copying rth.testenvironment in 0.000s
+2026-05-13T15:53:18.868472Z NOTICE DONE copying rth.bug in 0.000s
+2026-05-13T15:53:18.868472Z NOTICE CREATE INDEX idx_16902_defect ON rth.verifyresults (defect_id);
+2026-05-13T15:53:18.868472Z NOTICE CREATE UNIQUE INDEX idx_16902_primary ON rth.verifyresults (verifyresultsid);
+2026-05-13T15:53:18.868472Z NOTICE CREATE UNIQUE INDEX idx_16699_primary ON rth.testarea (areatestedid);
+2026-05-13T15:53:18.868472Z NOTICE DONE copying rth."user" in 0.000s
+2026-05-13T15:53:18.868472Z NOTICE DONE copying rth.requirementfunctionality_assoc in 0.000s
+2026-05-13T15:53:18.868472Z NOTICE DONE copying rth.manualdoctype in 0.000s
+2026-05-13T15:53:18.868472Z NOTICE CREATE UNIQUE INDEX idx_16699_projectid ON rth.testarea (areatestedname, project_id);
+2026-05-13T15:53:18.872473Z NOTICE DONE copying rth.testsuite in 0.000s
+2026-05-13T15:53:18.872473Z NOTICE DONE copying rth.testversion in 0.000s
+2026-05-13T15:53:18.872473Z NOTICE DONE copying rth.testsuite_requirement_assoc in 0.000s
+2026-05-13T15:53:18.872473Z NOTICE DONE copying rth.release_tbl in 0.000s
+2026-05-13T15:53:18.876473Z NOTICE DONE copying rth.project in 0.000s
+2026-05-13T15:53:18.876473Z NOTICE CREATE UNIQUE INDEX idx_16621_primary ON rth.requirementareacoverage (reqareacoverageid);
+2026-05-13T15:53:18.876473Z NOTICE DONE copying rth.testset_testsuite_assoc in 0.000s
+2026-05-13T15:53:18.876473Z NOTICE DONE copying rth.build in 0.000s
+2026-05-13T15:53:18.876473Z NOTICE CREATE UNIQUE INDEX idx_16621_projectid ON rth.requirementareacoverage (projectid, areacoverage);
+2026-05-13T15:53:18.876473Z NOTICE CREATE INDEX idx_16902_teststatus ON rth.verifyresults (teststatus);
+2026-05-13T15:53:18.876473Z NOTICE DONE copying rth.testset in 0.000s
+2026-05-13T15:53:18.876473Z NOTICE DONE copying rth.bugmonitor in 0.000s
+2026-05-13T15:53:18.876473Z NOTICE CREATE INDEX idx_16902_ts_uniquerunid ON rth.verifyresults (ts_uniquerunid, teststatus);
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.bugfile in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.feedback in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.bugnote in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.discussionpost in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.bugassoc in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE CREATE UNIQUE INDEX idx_16607_projectid ON rth.requirement (reqname, project_id);
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.discussion in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.field_tbl in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.individualrundocs in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.guichecktable in 0.000s
+2026-05-13T15:53:18.880474Z NOTICE DONE copying rth.news in 0.000s
+2026-05-13T15:53:18.884474Z NOTICE CREATE UNIQUE INDEX idx_16575_primary ON rth.project_user_assoc (project_user_assoc_id);
+2026-05-13T15:53:18.884474Z NOTICE CREATE INDEX idx_16607_parent ON rth.requirement (parent);
+2026-05-13T15:53:18.884474Z NOTICE DONE copying rth.issues in 0.000s
+2026-05-13T15:53:18.884474Z NOTICE DONE copying rth.manualtestdocs_version in 0.000s
+2026-05-13T15:53:18.884474Z NOTICE CREATE UNIQUE INDEX idx_16607_primary ON rth.requirement (reqid);
+2026-05-13T15:53:18.884474Z NOTICE DONE copying rth.function_tbl in 0.000s
+2026-05-13T15:53:18.884474Z NOTICE DONE copying rth.manualtestdocs in 0.000s
+2026-05-13T15:53:18.884474Z NOTICE DONE copying rth.requirementnotifications in 0.000s
+2026-05-13T15:53:18.884474Z NOTICE CREATE UNIQUE INDEX idx_16626_primary ON rth.requirementdocumenttype (reqdoctypeid);
+2026-05-13T15:53:18.888475Z NOTICE DONE copying rth.screen in 0.000s
+2026-05-13T15:53:18.888475Z NOTICE DONE copying rth.reset_password in 0.000s
+2026-05-13T15:53:18.888475Z NOTICE DONE copying rth.testplanversion in 0.000s
+2026-05-13T15:53:18.892475Z NOTICE CREATE UNIQUE INDEX idx_16404_primary ON rth.bugcategory (categoryid);
+2026-05-13T15:53:18.892475Z NOTICE DONE copying rth.step_tbl in 0.000s
+2026-05-13T15:53:18.892475Z NOTICE CREATE UNIQUE INDEX idx_16626_projectid ON rth.requirementdocumenttype (projectid, reqdoctypename);
+2026-05-13T15:53:18.892475Z NOTICE DONE copying rth.testplan in 0.000s
+2026-05-13T15:53:18.892475Z NOTICE CREATE UNIQUE INDEX idx_16404_projectid ON rth.bugcategory (categoryname, projectid);
+2026-05-13T15:53:18.892475Z NOTICE DONE copying rth.requirementversion_release_assoc in 0.000s
+2026-05-13T15:53:18.892475Z NOTICE DONE copying rth.testmachine in 0.000s
+2026-05-13T15:53:18.896476Z NOTICE DONE copying rth.teststatus in 0.000s
+2026-05-13T15:53:18.896476Z NOTICE DONE copying rth.test_function_assoc in 0.000s
+2026-05-13T15:53:18.896476Z NOTICE DONE copying rth.testworkflow in 0.000s
+2026-05-13T15:53:18.896476Z NOTICE CREATE INDEX idx_16810_testset_id ON rth.testsuiteresults (testsetid, ts_uniquerunid);
+2026-05-13T15:53:18.896476Z NOTICE CREATE UNIQUE INDEX idx_16810_primary ON rth.testsuiteresults (testsuiteresultsid);
+2026-05-13T15:53:18.896476Z NOTICE CREATE INDEX idx_16810_ts_uniquerunid ON rth.testsuiteresults (ts_uniquerunid);
+2026-05-13T15:53:18.896476Z NOTICE CREATE INDEX idx_16810_testid ON rth.testsuiteresults (testid);
+2026-05-13T15:53:18.896476Z NOTICE CREATE INDEX idx_16655_reqid ON rth.requirementversion (reqid);
+2026-05-13T15:53:18.908477Z NOTICE CREATE UNIQUE INDEX idx_16421_primary ON rth.bughistory (bughistoryid);
+2026-05-13T15:53:18.912478Z NOTICE CREATE UNIQUE INDEX idx_16706_primary ON rth.testenvironment (environmentid);
+2026-05-13T15:53:18.968485Z NOTICE CREATE UNIQUE INDEX idx_16655_primary ON rth.requirementversion (reqversionid);
+2026-05-13T15:53:19.000490Z NOTICE CREATE INDEX idx_16391_projectid ON rth.bug (projectid);
+2026-05-13T15:53:19.016491Z NOTICE CREATE UNIQUE INDEX idx_16706_projectid ON rth.testenvironment (environmentname, projectid);
+2026-05-13T15:53:19.020492Z NOTICE CREATE UNIQUE INDEX idx_16879_primary ON rth."user" (user_id);
+2026-05-13T15:53:19.080499Z NOTICE CREATE UNIQUE INDEX idx_16391_primary ON rth.bug (bugid);
+2026-05-13T15:53:19.112503Z NOTICE CREATE UNIQUE INDEX idx_16518_primary ON rth.manualdoctype (manualdoctypeid);
+2026-05-13T15:53:19.128505Z NOTICE CREATE UNIQUE INDEX idx_16641_primary ON rth.requirementfunctionality_assoc (requirementfunctionality_associd);
+2026-05-13T15:53:19.132506Z NOTICE CREATE INDEX idx_16774_areatested ON rth.testsuite (areatested);
+2026-05-13T15:53:19.184512Z NOTICE CREATE UNIQUE INDEX idx_16641_reqid_reqfunctid ON rth.requirementfunctionality_assoc (requirementid, requirementfunctionalityid);
+2026-05-13T15:53:19.216516Z NOTICE CREATE UNIQUE INDEX idx_16840_primary ON rth.testsuite_requirement_assoc (testsuite_requirement_associd);
+2026-05-13T15:53:19.244519Z NOTICE CREATE UNIQUE INDEX idx_16774_primary ON rth.testsuite (testid);
+2026-05-13T15:53:19.252520Z NOTICE CREATE UNIQUE INDEX idx_16587_primary ON rth.release_tbl (releaseid);
+2026-05-13T15:53:19.312528Z NOTICE CREATE UNIQUE INDEX idx_16853_primary ON rth.testversion (testversionid);
+2026-05-13T15:53:19.348532Z NOTICE CREATE UNIQUE INDEX idx_16749_primary ON rth.testset_testsuite_assoc (testset_testsuite_associd, testsetid);
+2026-05-13T15:53:19.368535Z NOTICE CREATE UNIQUE INDEX idx_16550_primary ON rth.project (project_id);
+2026-05-13T15:53:19.388537Z NOTICE CREATE INDEX idx_16749_testid_idx ON rth.testset_testsuite_assoc (testid);
+2026-05-13T15:53:19.420541Z NOTICE CREATE UNIQUE INDEX idx_16550_project_name ON rth.project (project_name);
+2026-05-13T15:53:19.456544Z NOTICE CREATE INDEX idx_16729_buildid ON rth.testset (buildid);
+2026-05-13T15:53:19.472546Z NOTICE CREATE INDEX idx_16749_testsetid ON rth.testset_testsuite_assoc (testsetid);
+2026-05-13T15:53:19.488548Z NOTICE CREATE UNIQUE INDEX idx_16729_primary ON rth.testset (testsetid);
+2026-05-13T15:53:19.508551Z NOTICE CREATE UNIQUE INDEX idx_16441_primary ON rth.build (buildid);
+2026-05-13T15:53:19.532553Z NOTICE CREATE UNIQUE INDEX idx_16414_primary ON rth.bugfile (bugfileid);
+2026-05-13T15:53:19.556556Z NOTICE CREATE UNIQUE INDEX idx_16426_primary ON rth.bugmonitor (bugmonitorid);
+2026-05-13T15:53:19.572558Z NOTICE CREATE UNIQUE INDEX idx_16470_primary ON rth.feedback (feedbackid);
+2026-05-13T15:53:19.596561Z NOTICE CREATE UNIQUE INDEX idx_16426_userid_bugid ON rth.bugmonitor (userid, bugid);
+2026-05-13T15:53:19.628565Z NOTICE CREATE UNIQUE INDEX idx_16399_primary ON rth.bugassoc (bugassocid);
+2026-05-13T15:53:19.652568Z NOTICE CREATE UNIQUE INDEX idx_16434_primary ON rth.bugnote (bugnoteid);
+2026-05-13T15:53:19.676571Z NOTICE CREATE UNIQUE INDEX idx_16454_primary ON rth.discussion (discussionid);
+2026-05-13T15:53:19.692573Z NOTICE CREATE UNIQUE INDEX idx_16462_primary ON rth.discussionpost (postid);
+2026-05-13T15:53:19.720576Z NOTICE CREATE UNIQUE INDEX idx_16491_primary ON rth.guichecktable (guicheckid);
+2026-05-13T15:53:19.756581Z NOTICE CREATE UNIQUE INDEX idx_16477_primary ON rth.field_tbl (field_id);
+2026-05-13T15:53:19.772583Z NOTICE CREATE UNIQUE INDEX idx_16538_primary ON rth.news (newsid);
+2026-05-13T15:53:19.792585Z NOTICE CREATE UNIQUE INDEX idx_16496_primary ON rth.individualrundocs (uniquedocid);
+2026-05-13T15:53:19.836590Z NOTICE CREATE UNIQUE INDEX idx_16531_primary ON rth.manualtestdocs_version (versionid);
+2026-05-13T15:53:19.864594Z NOTICE CREATE UNIQUE INDEX idx_16504_primary ON rth.issues (id);
+2026-05-13T15:53:19.884596Z NOTICE CREATE UNIQUE INDEX idx_16482_primary ON rth.function_tbl (function_id);
+2026-05-13T15:53:19.908599Z NOTICE CREATE INDEX idx_16531_manualtestid_timestamp ON rth.manualtestdocs_version (manualtestid, timestamp);
+2026-05-13T15:53:19.952605Z NOTICE CREATE UNIQUE INDEX idx_16648_userid_reqid ON rth.requirementnotifications (userid, reqid);
+2026-05-13T15:53:19.968606Z NOTICE CREATE UNIQUE INDEX idx_16524_primary ON rth.manualtestdocs (manualtestid);
+2026-05-13T15:53:19.992610Z NOTICE CREATE UNIQUE INDEX idx_16686_primary ON rth.screen (screen_id);
+2026-05-13T15:53:20.016613Z NOTICE CREATE UNIQUE INDEX idx_16648_primary ON rth.requirementnotifications (reqnotifyid);
+2026-05-13T15:53:20.068620Z NOTICE CREATE UNIQUE INDEX idx_16721_primary ON rth.testplanversion (testplanversionid);
+2026-05-13T15:53:20.084622Z NOTICE CREATE UNIQUE INDEX idx_16678_primary ON rth.reset_password (reset_id);
+2026-05-13T15:53:20.112625Z NOTICE CREATE UNIQUE INDEX idx_16691_primary ON rth.step_tbl (step_id);
+2026-05-13T15:53:20.136628Z NOTICE CREATE UNIQUE INDEX idx_16678_reset_link ON rth.reset_password (reset_link);
+2026-05-13T15:53:20.180633Z NOTICE CREATE UNIQUE INDEX idx_16671_reqversionid_releaseid ON rth.requirementversion_release_assoc (requirementversionid, releaseid);
+2026-05-13T15:53:20.200636Z NOTICE CREATE UNIQUE INDEX idx_16716_primary ON rth.testplan (testplanid);
+2026-05-13T15:53:20.236640Z NOTICE CREATE UNIQUE INDEX idx_16711_primary ON rth.testmachine (machineid);
+2026-05-13T15:53:20.248641Z NOTICE CREATE UNIQUE INDEX idx_16671_primary ON rth.requirementversion_release_assoc (requirementversion_release_associd);
+2026-05-13T15:53:20.296647Z NOTICE CREATE UNIQUE INDEX idx_16872_primary ON rth.test_function_assoc (test_func_assoc_id);
+2026-05-13T15:53:20.320650Z NOTICE CREATE INDEX idx_16711_projectid ON rth.testmachine (projectid);
+2026-05-13T15:53:20.356655Z NOTICE CREATE UNIQUE INDEX idx_16760_primary ON rth.teststatus (teststatusid);
+2026-05-13T15:53:20.356655Z NOTICE CREATE UNIQUE INDEX idx_16864_primary ON rth.testworkflow (uniquetestid);
+2026-05-13T15:53:20.399787Z NOTICE Completing PostgreSQL database.
+2026-05-13T15:53:20.399787Z NOTICE Reset sequences
+2026-05-13T15:53:20.675819Z NOTICE ALTER TABLE rth.logs ADD PRIMARY KEY USING INDEX idx_16511_primary;
+2026-05-13T15:53:20.687821Z NOTICE ALTER TABLE rth.teststep ADD PRIMARY KEY USING INDEX idx_16766_primary;
+2026-05-13T15:53:20.699822Z NOTICE ALTER TABLE rth.requirementfunctionality ADD PRIMARY KEY USING INDEX idx_16634_primary;
+2026-05-13T15:53:20.711823Z NOTICE ALTER TABLE rth.bugcomponent ADD PRIMARY KEY USING INDEX idx_16409_primary;
+2026-05-13T15:53:20.723825Z NOTICE ALTER TABLE rth.testtype ADD PRIMARY KEY USING INDEX idx_16848_primary;
+2026-05-13T15:53:20.735826Z NOTICE ALTER TABLE rth.testarea ADD PRIMARY KEY USING INDEX idx_16699_primary;
+2026-05-13T15:53:20.747828Z NOTICE ALTER TABLE rth.verifyresults ADD PRIMARY KEY USING INDEX idx_16902_primary;
+2026-05-13T15:53:20.759829Z NOTICE ALTER TABLE rth.requirementareacoverage ADD PRIMARY KEY USING INDEX idx_16621_primary;
+2026-05-13T15:53:20.771831Z NOTICE ALTER TABLE rth.requirement ADD PRIMARY KEY USING INDEX idx_16607_primary;
+2026-05-13T15:53:20.783832Z NOTICE ALTER TABLE rth.project_user_assoc ADD PRIMARY KEY USING INDEX idx_16575_primary;
+2026-05-13T15:53:20.795834Z NOTICE ALTER TABLE rth.bugcategory ADD PRIMARY KEY USING INDEX idx_16404_primary;
+2026-05-13T15:53:20.807835Z NOTICE ALTER TABLE rth.requirementdocumenttype ADD PRIMARY KEY USING INDEX idx_16626_primary;
+2026-05-13T15:53:20.819837Z NOTICE ALTER TABLE rth.testsuiteresults ADD PRIMARY KEY USING INDEX idx_16810_primary;
+2026-05-13T15:53:20.831838Z NOTICE ALTER TABLE rth.bughistory ADD PRIMARY KEY USING INDEX idx_16421_primary;
+2026-05-13T15:53:20.843839Z NOTICE ALTER TABLE rth.requirementversion ADD PRIMARY KEY USING INDEX idx_16655_primary;
+2026-05-13T15:53:20.855841Z NOTICE ALTER TABLE rth.testenvironment ADD PRIMARY KEY USING INDEX idx_16706_primary;
+2026-05-13T15:53:20.867842Z NOTICE ALTER TABLE rth.bug ADD PRIMARY KEY USING INDEX idx_16391_primary;
+2026-05-13T15:53:20.879844Z NOTICE ALTER TABLE rth."user" ADD PRIMARY KEY USING INDEX idx_16879_primary;
+2026-05-13T15:53:20.891845Z NOTICE ALTER TABLE rth.requirementfunctionality_assoc ADD PRIMARY KEY USING INDEX idx_16641_primary;
+2026-05-13T15:53:20.903847Z NOTICE ALTER TABLE rth.manualdoctype ADD PRIMARY KEY USING INDEX idx_16518_primary;
+2026-05-13T15:53:20.915848Z NOTICE ALTER TABLE rth.testsuite ADD PRIMARY KEY USING INDEX idx_16774_primary;
+2026-05-13T15:53:20.927850Z NOTICE ALTER TABLE rth.testversion ADD PRIMARY KEY USING INDEX idx_16853_primary;
+2026-05-13T15:53:20.939851Z NOTICE ALTER TABLE rth.testsuite_requirement_assoc ADD PRIMARY KEY USING INDEX idx_16840_primary;
+2026-05-13T15:53:20.947852Z NOTICE ALTER TABLE rth.release_tbl ADD PRIMARY KEY USING INDEX idx_16587_primary;
+2026-05-13T15:53:20.959854Z NOTICE ALTER TABLE rth.project ADD PRIMARY KEY USING INDEX idx_16550_primary;
+2026-05-13T15:53:20.971855Z NOTICE ALTER TABLE rth.testset_testsuite_assoc ADD PRIMARY KEY USING INDEX idx_16749_primary;
+2026-05-13T15:53:20.983857Z NOTICE ALTER TABLE rth.build ADD PRIMARY KEY USING INDEX idx_16441_primary;
+2026-05-13T15:53:20.995859Z NOTICE ALTER TABLE rth.testset ADD PRIMARY KEY USING INDEX idx_16729_primary;
+2026-05-13T15:53:21.007860Z NOTICE ALTER TABLE rth.bugmonitor ADD PRIMARY KEY USING INDEX idx_16426_primary;
+2026-05-13T15:53:21.019862Z NOTICE ALTER TABLE rth.bugfile ADD PRIMARY KEY USING INDEX idx_16414_primary;
+2026-05-13T15:53:21.031863Z NOTICE ALTER TABLE rth.feedback ADD PRIMARY KEY USING INDEX idx_16470_primary;
+2026-05-13T15:53:21.043865Z NOTICE ALTER TABLE rth.bugnote ADD PRIMARY KEY USING INDEX idx_16434_primary;
+2026-05-13T15:53:21.055866Z NOTICE ALTER TABLE rth.discussionpost ADD PRIMARY KEY USING INDEX idx_16462_primary;
+2026-05-13T15:53:21.067868Z NOTICE ALTER TABLE rth.bugassoc ADD PRIMARY KEY USING INDEX idx_16399_primary;
+2026-05-13T15:53:21.075869Z NOTICE ALTER TABLE rth.discussion ADD PRIMARY KEY USING INDEX idx_16454_primary;
+2026-05-13T15:53:21.087870Z NOTICE ALTER TABLE rth.field_tbl ADD PRIMARY KEY USING INDEX idx_16477_primary;
+2026-05-13T15:53:21.103872Z NOTICE ALTER TABLE rth.individualrundocs ADD PRIMARY KEY USING INDEX idx_16496_primary;
+2026-05-13T15:53:21.115874Z NOTICE ALTER TABLE rth.guichecktable ADD PRIMARY KEY USING INDEX idx_16491_primary;
+2026-05-13T15:53:21.127875Z NOTICE ALTER TABLE rth.news ADD PRIMARY KEY USING INDEX idx_16538_primary;
+2026-05-13T15:53:21.139876Z NOTICE ALTER TABLE rth.issues ADD PRIMARY KEY USING INDEX idx_16504_primary;
+2026-05-13T15:53:21.151878Z NOTICE ALTER TABLE rth.manualtestdocs_version ADD PRIMARY KEY USING INDEX idx_16531_primary;
+2026-05-13T15:53:21.163879Z NOTICE ALTER TABLE rth.function_tbl ADD PRIMARY KEY USING INDEX idx_16482_primary;
+2026-05-13T15:53:21.175881Z NOTICE ALTER TABLE rth.manualtestdocs ADD PRIMARY KEY USING INDEX idx_16524_primary;
+2026-05-13T15:53:21.187882Z NOTICE ALTER TABLE rth.requirementnotifications ADD PRIMARY KEY USING INDEX idx_16648_primary;
+2026-05-13T15:53:21.199884Z NOTICE ALTER TABLE rth.screen ADD PRIMARY KEY USING INDEX idx_16686_primary;
+2026-05-13T15:53:21.215886Z NOTICE ALTER TABLE rth.reset_password ADD PRIMARY KEY USING INDEX idx_16678_primary;
+2026-05-13T15:53:21.223887Z NOTICE ALTER TABLE rth.testplanversion ADD PRIMARY KEY USING INDEX idx_16721_primary;
+2026-05-13T15:53:21.235888Z NOTICE ALTER TABLE rth.step_tbl ADD PRIMARY KEY USING INDEX idx_16691_primary;
+2026-05-13T15:53:21.247890Z NOTICE ALTER TABLE rth.testplan ADD PRIMARY KEY USING INDEX idx_16716_primary;
+2026-05-13T15:53:21.263892Z NOTICE ALTER TABLE rth.requirementversion_release_assoc ADD PRIMARY KEY USING INDEX idx_16671_primary;
+2026-05-13T15:53:21.275893Z NOTICE ALTER TABLE rth.testmachine ADD PRIMARY KEY USING INDEX idx_16711_primary;
+2026-05-13T15:53:21.287894Z NOTICE ALTER TABLE rth.teststatus ADD PRIMARY KEY USING INDEX idx_16760_primary;
+2026-05-13T15:53:21.299896Z NOTICE ALTER TABLE rth.test_function_assoc ADD PRIMARY KEY USING INDEX idx_16872_primary;
+2026-05-13T15:53:21.311897Z NOTICE ALTER TABLE rth.testworkflow ADD PRIMARY KEY USING INDEX idx_16864_primary;
+2026-05-13T15:53:21.343901Z NOTICE ALTER DATABASE "rth_modern" SET search_path TO public, rth;
+2026-05-13T15:53:21.371905Z LOG report summary reset
+2026-05-13T16:43:44.024004Z NOTICE Starting pgloader, log system is ready.
+2026-05-13T16:43:44.044006Z LOG pgloader version "3.6.7~devel"
+2026-05-13T16:43:44.360044Z NOTICE Executing SQL block for before load
+2026-05-13T16:43:44.600072Z LOG Migrating from #<MYSQL-CONNECTION mysql://root@host.docker.internal:33066/rth {1007EB3AE3}>
+2026-05-13T16:43:44.600072Z LOG Migrating into #<PGSQL-CONNECTION pgsql://app@host.docker.internal:54321/rth_modern {1007EB4B93}>
+2026-05-13T16:43:46.584313Z NOTICE Prepare PostgreSQL database.
+2026-05-13T16:43:52.965045Z NOTICE Processing tables in this order: rth.bugcategory: 3 rows, rth.project_user_assoc: 3 rows, rth.requirement: 3 rows, rth.requirementdocumenttype: 3 rows, rth.requirementfunctionality_assoc: 3 rows, rth.requirementversion: 3 rows, rth.testenvironment: 3 rows, rth.testsuiteresults: 3 rows, rth."user": 3 rows, rth.bug: 2 rows, rth.bughistory: 2 rows, rth.manualdoctype: 2 rows, rth.testset_testsuite_assoc: 2 rows, rth.testsuite: 2 rows, rth.testsuite_requirement_assoc: 2 rows, rth.testversion: 2 rows, rth.build: 1 rows, rth.project: 1 rows, rth.release_tbl: 1 rows, rth.testset: 1 rows, rth.bugassoc: 0 rows, rth.bugfile: 0 rows, rth.bugmonitor: 0 rows, rth.bugnote: 0 rows, rth.discussion: 0 rows, rth.discussionpost: 0 rows, rth.feedback: 0 rows, rth.field_tbl: 0 rows, rth.function_tbl: 0 rows, rth.guichecktable: 0 rows, rth.individualrundocs: 0 rows, rth.issues: 0 rows, rth.manualtestdocs: 0 rows, rth.manualtestdocs_version: 0 rows, rth.news: 0 rows, rth.requirementnotifications: 0 rows, rth.requirementversion_release_assoc: 0 rows, rth.reset_password: 0 rows, rth.screen: 0 rows, rth.step_tbl: 0 rows, rth.testmachine: 0 rows, rth.testplan: 0 rows, rth.testplanversion: 0 rows, rth.teststatus: 0 rows, rth.testworkflow: 0 rows, rth.test_function_assoc: 0 rows
+2026-05-13T16:43:53.005049Z NOTICE COPY rth.logs with 13 rows estimated [7/8]
+2026-05-13T16:43:53.185623Z NOTICE COPY rth.teststep with 8 rows estimated [5/8]
+2026-05-13T16:43:53.265631Z NOTICE COPY rth.bugcomponent with 5 rows estimated [3/8]
+2026-05-13T16:43:53.321636Z NOTICE COPY rth.requirementfunctionality with 5 rows estimated [1/8]
+2026-05-13T16:43:53.385642Z NOTICE COPY rth.testtype with 4 rows estimated [3/8]
+2026-05-13T16:43:53.425646Z NOTICE COPY rth.verifyresults with 4 rows estimated [1/8]
+2026-05-13T16:43:53.521655Z NOTICE COPY rth.testarea with 4 rows estimated [5/8]
+2026-05-13T16:43:53.589661Z NOTICE COPY rth.requirementareacoverage with 4 rows estimated [7/8]
+2026-05-13T16:43:53.721673Z NOTICE COPY rth.requirement with 3 rows estimated [3/8]
+2026-05-13T16:43:53.901691Z NOTICE COPY rth.project_user_assoc with 3 rows estimated [5/8]
+2026-05-13T16:43:53.961696Z NOTICE COPY rth.requirementdocumenttype with 3 rows estimated [1/8]
+2026-05-13T16:43:54.029704Z NOTICE COPY rth.bugcategory with 3 rows estimated [7/8]
+2026-05-13T16:43:54.101711Z NOTICE COPY rth.requirementversion with 3 rows estimated [5/8]
+2026-05-13T16:43:54.189719Z NOTICE COPY rth.testenvironment with 3 rows estimated [3/8]
+2026-05-13T16:43:54.341734Z NOTICE COPY rth.requirementfunctionality_assoc with 3 rows estimated [7/8]
+2026-05-13T16:43:54.509750Z NOTICE COPY rth.testsuiteresults with 3 rows estimated [1/8]
+2026-05-13T16:43:54.905787Z NOTICE COPY rth.bug with 2 rows estimated [5/8]
+2026-05-13T16:43:55.125809Z NOTICE COPY rth.bughistory with 2 rows estimated [3/8]
+2026-05-13T16:43:55.237819Z NOTICE COPY rth.manualdoctype with 2 rows estimated [1/8]
+2026-05-13T16:43:55.505845Z NOTICE COPY rth."user" with 3 rows estimated [7/8]
+2026-05-13T16:43:55.949886Z NOTICE COPY rth.testsuite with 2 rows estimated [5/8]
+2026-05-13T16:43:56.357926Z NOTICE COPY rth.testsuite_requirement_assoc with 2 rows estimated [3/8]
+2026-05-13T16:43:56.569945Z NOTICE COPY rth.testset_testsuite_assoc with 2 rows estimated [7/8]
+2026-05-13T16:43:56.925980Z NOTICE COPY rth.testversion with 2 rows estimated [1/8]
+2026-05-13T16:43:57.374023Z NOTICE COPY rth.project with 1 rows estimated [5/8]
+2026-05-13T16:43:57.578042Z NOTICE COPY rth.release_tbl with 1 rows estimated [3/8]
+2026-05-13T16:43:57.846067Z NOTICE COPY rth.build with 1 rows estimated [7/8]
+2026-05-13T16:43:57.998082Z NOTICE COPY rth.testset with 1 rows estimated [1/8]
+2026-05-13T16:43:58.362118Z NOTICE DONE copying rth.bugcomponent in 0.000s
+2026-05-13T16:43:58.422123Z NOTICE DONE copying rth.requirementfunctionality in 0.000s
+2026-05-13T16:43:58.426124Z NOTICE DONE copying rth.teststep in 0.000s
+2026-05-13T16:43:58.430124Z NOTICE DONE copying rth.logs in 0.000s
+2026-05-13T16:43:58.430124Z NOTICE COPY rth.bugfile with 0 rows estimated [5/8]
+2026-05-13T16:43:58.466128Z NOTICE COPY rth.bugassoc with 0 rows estimated [7/8]
+2026-05-13T16:43:58.914169Z NOTICE COPY rth.bugmonitor with 0 rows estimated [3/8]
+2026-05-13T16:43:59.118190Z NOTICE COPY rth.bugnote with 0 rows estimated [1/8]
+2026-05-13T16:43:59.342211Z NOTICE COPY rth.discussion with 0 rows estimated [7/8]
+2026-05-13T16:43:59.546232Z NOTICE COPY rth.field_tbl with 0 rows estimated [1/8]
+2026-05-13T16:43:59.962293Z NOTICE COPY rth.feedback with 0 rows estimated [3/8]
+2026-05-13T16:44:00.242335Z NOTICE COPY rth.discussionpost with 0 rows estimated [5/8]
+2026-05-13T16:44:00.446365Z NOTICE COPY rth.function_tbl with 0 rows estimated [7/8]
+2026-05-13T16:44:00.662396Z NOTICE COPY rth.issues with 0 rows estimated [1/8]
+2026-05-13T16:44:00.946438Z NOTICE COPY rth.individualrundocs with 0 rows estimated [3/8]
+2026-05-13T16:44:01.086460Z NOTICE COPY rth.guichecktable with 0 rows estimated [5/8]
+2026-05-13T16:44:01.246483Z NOTICE COPY rth.manualtestdocs with 0 rows estimated [7/8]
+2026-05-13T16:44:01.418509Z NOTICE COPY rth.news with 0 rows estimated [3/8]
+2026-05-13T16:44:01.594534Z NOTICE COPY rth.requirementnotifications with 0 rows estimated [1/8]
+2026-05-13T16:44:01.758558Z NOTICE COPY rth.manualtestdocs_version with 0 rows estimated [5/8]
+2026-05-13T16:44:02.042601Z NOTICE COPY rth.requirementversion_release_assoc with 0 rows estimated [7/8]
+2026-05-13T16:44:02.102610Z NOTICE COPY rth.screen with 0 rows estimated [3/8]
+2026-05-13T16:44:02.170620Z NOTICE COPY rth.reset_password with 0 rows estimated [5/8]
+2026-05-13T16:44:02.246631Z NOTICE COPY rth.step_tbl with 0 rows estimated [1/8]
+2026-05-13T16:44:02.370649Z NOTICE CREATE UNIQUE INDEX idx_17107_projectid ON rth.bugcomponent (componentname, projectid);
+2026-05-13T16:44:02.378651Z NOTICE COPY rth.testmachine with 0 rows estimated [7/8]
+2026-05-13T16:44:02.498668Z NOTICE COPY rth.testplanversion with 0 rows estimated [3/8]
+2026-05-13T16:44:02.598682Z NOTICE CREATE UNIQUE INDEX idx_17107_primary ON rth.bugcomponent (componentid);
+2026-05-13T16:44:02.602683Z NOTICE DONE copying rth.testarea in 0.000s
+2026-05-13T16:44:02.602683Z NOTICE COPY rth.testplan with 0 rows estimated [5/8]
+2026-05-13T16:44:02.718700Z NOTICE CREATE UNIQUE INDEX idx_17332_projectid ON rth.requirementfunctionality (projectid, functionalityname);
+2026-05-13T16:44:02.718700Z NOTICE COPY rth.teststatus with 0 rows estimated [1/8]
+2026-05-13T16:44:02.798712Z NOTICE DONE copying rth.testtype in 0.000s
+2026-05-13T16:44:02.798712Z NOTICE CREATE UNIQUE INDEX idx_17332_primary ON rth.requirementfunctionality (functionalityid);
+2026-05-13T16:44:02.798712Z NOTICE COPY rth.testworkflow with 0 rows estimated [7/8]
+2026-05-13T16:44:02.862721Z NOTICE COPY rth.test_function_assoc with 0 rows estimated [5/8]
+2026-05-13T16:44:02.954735Z NOTICE DONE copying rth.verifyresults in 0.000s
+2026-05-13T16:44:02.966736Z NOTICE DONE copying rth.requirementareacoverage in 0.000s
+2026-05-13T16:44:02.994740Z NOTICE DONE copying rth.requirement in 0.000s
+2026-05-13T16:44:03.014744Z NOTICE DONE copying rth.requirementdocumenttype in 0.000s
+2026-05-13T16:44:03.034747Z NOTICE CREATE UNIQUE INDEX idx_17464_primary ON rth.teststep (teststepid);
+2026-05-13T16:44:03.038748Z NOTICE CREATE UNIQUE INDEX idx_17209_primary ON rth.logs (logid);
+2026-05-13T16:44:03.050750Z NOTICE CREATE UNIQUE INDEX idx_17397_primary ON rth.testarea (areatestedid);
+2026-05-13T16:44:03.062751Z NOTICE DONE copying rth.requirementversion in 0.000s
+2026-05-13T16:44:03.066752Z NOTICE DONE copying rth.testenvironment in 0.000s
+2026-05-13T16:44:03.066752Z NOTICE DONE copying rth.project_user_assoc in 0.000s
+2026-05-13T16:44:03.078754Z NOTICE CREATE UNIQUE INDEX idx_17397_projectid ON rth.testarea (areatestedname, project_id);
+2026-05-13T16:44:03.078754Z NOTICE DONE copying rth.bugcategory in 0.000s
+2026-05-13T16:44:03.078754Z NOTICE DONE copying rth.requirementfunctionality_assoc in 0.000s
+2026-05-13T16:44:03.090756Z NOTICE DONE copying rth.testsuiteresults in 0.000s
+2026-05-13T16:44:03.090756Z NOTICE DONE copying rth.bughistory in 0.000s
+2026-05-13T16:44:03.102757Z NOTICE DONE copying rth.manualdoctype in 0.000s
+2026-05-13T16:44:03.102757Z NOTICE DONE copying rth.testsuite in 0.000s
+2026-05-13T16:44:03.122760Z NOTICE CREATE UNIQUE INDEX idx_17546_projectid ON rth.testtype (testtype, project_id);
+2026-05-13T16:44:03.134762Z NOTICE CREATE INDEX idx_17600_defect ON rth.verifyresults (defect_id);
+2026-05-13T16:44:03.134762Z NOTICE DONE copying rth.testsuite_requirement_assoc in 0.000s
+2026-05-13T16:44:03.142763Z NOTICE DONE copying rth.bug in 0.000s
+2026-05-13T16:44:03.150764Z NOTICE CREATE UNIQUE INDEX idx_17546_primary ON rth.testtype (testtypeid);
+2026-05-13T16:44:03.154765Z NOTICE DONE copying rth."user" in 0.000s
+2026-05-13T16:44:03.166767Z NOTICE CREATE UNIQUE INDEX idx_17600_primary ON rth.verifyresults (verifyresultsid);
+2026-05-13T16:44:03.166767Z NOTICE DONE copying rth.testset_testsuite_assoc in 0.000s
+2026-05-13T16:44:03.166767Z NOTICE DONE copying rth.testversion in 0.000s
+2026-05-13T16:44:03.166767Z NOTICE DONE copying rth.release_tbl in 0.000s
+2026-05-13T16:44:03.182769Z NOTICE DONE copying rth.project in 0.000s
+2026-05-13T16:44:03.186770Z NOTICE DONE copying rth.testset in 0.000s
+2026-05-13T16:44:03.186770Z NOTICE DONE copying rth.bugmonitor in 0.000s
+2026-05-13T16:44:03.186770Z NOTICE DONE copying rth.bugfile in 0.000s
+2026-05-13T16:44:03.194771Z NOTICE DONE copying rth.build in 0.000s
+2026-05-13T16:44:03.210773Z NOTICE CREATE INDEX idx_17600_teststatus ON rth.verifyresults (teststatus);
+2026-05-13T16:44:03.218775Z NOTICE CREATE UNIQUE INDEX idx_17319_primary ON rth.requirementareacoverage (reqareacoverageid);
+2026-05-13T16:44:03.218775Z NOTICE CREATE INDEX idx_17600_ts_uniquerunid ON rth.verifyresults (ts_uniquerunid, teststatus);
+2026-05-13T16:44:03.222775Z NOTICE DONE copying rth.bugassoc in 0.000s
+2026-05-13T16:44:03.222775Z NOTICE DONE copying rth.bugnote in 0.000s
+2026-05-13T16:44:03.226776Z NOTICE CREATE UNIQUE INDEX idx_17319_projectid ON rth.requirementareacoverage (projectid, areacoverage);
+2026-05-13T16:44:03.230776Z NOTICE DONE copying rth.feedback in 0.000s
+2026-05-13T16:44:03.230776Z NOTICE DONE copying rth.field_tbl in 0.000s
+2026-05-13T16:44:03.234777Z NOTICE DONE copying rth.discussionpost in 0.000s
+2026-05-13T16:44:03.234777Z NOTICE DONE copying rth.individualrundocs in 0.000s
+2026-05-13T16:44:03.234777Z NOTICE DONE copying rth.guichecktable in 0.000s
+2026-05-13T16:44:03.238777Z NOTICE DONE copying rth.discussion in 0.000s
+2026-05-13T16:44:03.238777Z NOTICE DONE copying rth.function_tbl in 0.000s
+2026-05-13T16:44:03.246779Z NOTICE DONE copying rth.issues in 0.000s
+2026-05-13T16:44:03.246779Z NOTICE CREATE UNIQUE INDEX idx_17305_primary ON rth.requirement (reqid);
+2026-05-13T16:44:03.246779Z NOTICE CREATE INDEX idx_17305_parent ON rth.requirement (parent);
+2026-05-13T16:44:03.250779Z NOTICE CREATE UNIQUE INDEX idx_17305_projectid ON rth.requirement (reqname, project_id);
+2026-05-13T16:44:03.250779Z NOTICE CREATE UNIQUE INDEX idx_17324_primary ON rth.requirementdocumenttype (reqdoctypeid);
+2026-05-13T16:44:03.254780Z NOTICE DONE copying rth.news in 0.000s
+2026-05-13T16:44:03.254780Z NOTICE DONE copying rth.requirementnotifications in 0.000s
+2026-05-13T16:44:03.262781Z NOTICE DONE copying rth.manualtestdocs_version in 0.000s
+2026-05-13T16:44:03.266782Z NOTICE DONE copying rth.screen in 0.000s
+2026-05-13T16:44:03.302787Z NOTICE DONE copying rth.reset_password in 0.000s
+2026-05-13T16:44:03.310788Z NOTICE DONE copying rth.manualtestdocs in 0.000s
+2026-05-13T16:44:03.314789Z NOTICE DONE copying rth.step_tbl in 0.000s
+2026-05-13T16:44:03.314789Z NOTICE DONE copying rth.requirementversion_release_assoc in 0.000s
+2026-05-13T16:44:03.318789Z NOTICE CREATE UNIQUE INDEX idx_17353_primary ON rth.requirementversion (reqversionid);
+2026-05-13T16:44:03.318789Z NOTICE CREATE UNIQUE INDEX idx_17324_projectid ON rth.requirementdocumenttype (projectid, reqdoctypename);
+2026-05-13T16:44:03.326790Z NOTICE CREATE INDEX idx_17353_reqid ON rth.requirementversion (reqid);
+2026-05-13T16:44:03.326790Z NOTICE CREATE UNIQUE INDEX idx_17404_primary ON rth.testenvironment (environmentid);
+2026-05-13T16:44:03.326790Z NOTICE DONE copying rth.testplanversion in 0.000s
+2026-05-13T16:44:03.330791Z NOTICE DONE copying rth.teststatus in 0.000s
+2026-05-13T16:44:03.330791Z NOTICE DONE copying rth.testmachine in 0.000s
+2026-05-13T16:44:03.330791Z NOTICE DONE copying rth.testplan in 0.000s
+2026-05-13T16:44:03.334792Z NOTICE DONE copying rth.test_function_assoc in 0.000s
+2026-05-13T16:44:03.334792Z NOTICE DONE copying rth.testworkflow in 0.000s
+2026-05-13T16:44:03.338792Z NOTICE CREATE UNIQUE INDEX idx_17404_projectid ON rth.testenvironment (environmentname, projectid);
+2026-05-13T16:44:03.338792Z NOTICE CREATE UNIQUE INDEX idx_17273_primary ON rth.project_user_assoc (project_user_assoc_id);
+2026-05-13T16:44:03.342793Z NOTICE CREATE UNIQUE INDEX idx_17102_primary ON rth.bugcategory (categoryid);
+2026-05-13T16:44:03.342793Z NOTICE CREATE UNIQUE INDEX idx_17102_projectid ON rth.bugcategory (categoryname, projectid);
+2026-05-13T16:44:03.346793Z NOTICE CREATE UNIQUE INDEX idx_17339_reqid_reqfunctid ON rth.requirementfunctionality_assoc (requirementid, requirementfunctionalityid);
+2026-05-13T16:44:03.346793Z NOTICE CREATE UNIQUE INDEX idx_17339_primary ON rth.requirementfunctionality_assoc (requirementfunctionality_associd);
+2026-05-13T16:44:03.346793Z NOTICE CREATE UNIQUE INDEX idx_17508_primary ON rth.testsuiteresults (testsuiteresultsid);
+2026-05-13T16:44:03.350794Z NOTICE CREATE INDEX idx_17508_testid ON rth.testsuiteresults (testid);
+2026-05-13T16:44:03.462811Z NOTICE CREATE UNIQUE INDEX idx_17119_primary ON rth.bughistory (bughistoryid);
+2026-05-13T16:44:03.462811Z NOTICE CREATE INDEX idx_17508_testset_id ON rth.testsuiteresults (testsetid, ts_uniquerunid);
+2026-05-13T16:44:03.470812Z NOTICE CREATE INDEX idx_17508_ts_uniquerunid ON rth.testsuiteresults (ts_uniquerunid);
+2026-05-13T16:44:03.622833Z NOTICE CREATE UNIQUE INDEX idx_17216_primary ON rth.manualdoctype (manualdoctypeid);
+2026-05-13T16:44:03.878871Z NOTICE CREATE UNIQUE INDEX idx_17538_primary ON rth.testsuite_requirement_assoc (testsuite_requirement_associd);
+2026-05-13T16:44:03.886872Z NOTICE CREATE UNIQUE INDEX idx_17472_primary ON rth.testsuite (testid);
+2026-05-13T16:44:03.890873Z NOTICE CREATE INDEX idx_17472_areatested ON rth.testsuite (areatested);
+2026-05-13T16:44:04.074901Z NOTICE CREATE UNIQUE INDEX idx_17089_primary ON rth.bug (bugid);
+2026-05-13T16:44:04.322937Z NOTICE CREATE UNIQUE INDEX idx_17447_primary ON rth.testset_testsuite_assoc (testset_testsuite_associd, testsetid);
+2026-05-13T16:44:04.362943Z NOTICE CREATE UNIQUE INDEX idx_17577_primary ON rth."user" (user_id);
+2026-05-13T16:44:04.390948Z NOTICE CREATE INDEX idx_17089_projectid ON rth.bug (projectid);
+2026-05-13T16:44:04.530968Z NOTICE CREATE INDEX idx_17447_testid_idx ON rth.testset_testsuite_assoc (testid);
+2026-05-13T16:44:04.779004Z NOTICE CREATE UNIQUE INDEX idx_17285_primary ON rth.release_tbl (releaseid);
+2026-05-13T16:44:04.787005Z NOTICE CREATE UNIQUE INDEX idx_17551_primary ON rth.testversion (testversionid);
+2026-05-13T16:44:04.815009Z NOTICE CREATE INDEX idx_17447_testsetid ON rth.testset_testsuite_assoc (testsetid);
+2026-05-13T16:44:05.031042Z NOTICE CREATE UNIQUE INDEX idx_17248_primary ON rth.project (project_id);
+2026-05-13T16:44:05.423100Z NOTICE CREATE UNIQUE INDEX idx_17427_primary ON rth.testset (testsetid);
+2026-05-13T16:44:05.459105Z NOTICE CREATE INDEX idx_17427_buildid ON rth.testset (buildid);
+2026-05-13T16:44:05.479108Z NOTICE CREATE UNIQUE INDEX idx_17248_project_name ON rth.project (project_name);
+2026-05-13T16:44:05.743146Z NOTICE CREATE UNIQUE INDEX idx_17124_primary ON rth.bugmonitor (bugmonitorid);
+2026-05-13T16:44:06.235220Z NOTICE CREATE UNIQUE INDEX idx_17139_primary ON rth.build (buildid);
+2026-05-13T16:44:06.339235Z NOTICE CREATE UNIQUE INDEX idx_17124_userid_bugid ON rth.bugmonitor (userid, bugid);
+2026-05-13T16:44:06.439250Z NOTICE CREATE UNIQUE INDEX idx_17112_primary ON rth.bugfile (bugfileid);
+2026-05-13T16:44:06.651280Z NOTICE CREATE UNIQUE INDEX idx_17097_primary ON rth.bugassoc (bugassocid);
+2026-05-13T16:44:06.951324Z NOTICE CREATE UNIQUE INDEX idx_17175_primary ON rth.field_tbl (field_id);
+2026-05-13T16:44:07.027337Z NOTICE CREATE UNIQUE INDEX idx_17132_primary ON rth.bugnote (bugnoteid);
+2026-05-13T16:44:07.071343Z NOTICE CREATE UNIQUE INDEX idx_17168_primary ON rth.feedback (feedbackid);
+2026-05-13T16:44:07.299377Z NOTICE CREATE UNIQUE INDEX idx_17160_primary ON rth.discussionpost (postid);
+2026-05-13T16:44:07.523410Z NOTICE CREATE UNIQUE INDEX idx_17152_primary ON rth.discussion (discussionid);
+2026-05-13T16:44:07.575416Z NOTICE CREATE UNIQUE INDEX idx_17194_primary ON rth.individualrundocs (uniquedocid);
+2026-05-13T16:44:07.651426Z NOTICE CREATE UNIQUE INDEX idx_17189_primary ON rth.guichecktable (guicheckid);
+2026-05-13T16:44:08.107484Z NOTICE CREATE UNIQUE INDEX idx_17180_primary ON rth.function_tbl (function_id);
+2026-05-13T16:44:08.259503Z NOTICE CREATE UNIQUE INDEX idx_17346_primary ON rth.requirementnotifications (reqnotifyid);
+2026-05-13T16:44:08.303508Z NOTICE CREATE UNIQUE INDEX idx_17202_primary ON rth.issues (id);
+2026-05-13T16:44:08.327511Z NOTICE CREATE UNIQUE INDEX idx_17236_primary ON rth.news (newsid);
+2026-05-13T16:44:08.663552Z NOTICE CREATE UNIQUE INDEX idx_17346_userid_reqid ON rth.requirementnotifications (userid, reqid);
+2026-05-13T16:44:08.907583Z NOTICE CREATE UNIQUE INDEX idx_17384_primary ON rth.screen (screen_id);
+2026-05-13T16:44:08.987593Z NOTICE CREATE INDEX idx_17229_manualtestid_timestamp ON rth.manualtestdocs_version (manualtestid, timestamp);
+2026-05-13T16:44:09.043601Z NOTICE CREATE UNIQUE INDEX idx_17229_primary ON rth.manualtestdocs_version (versionid);
+2026-05-13T16:44:09.255627Z NOTICE CREATE UNIQUE INDEX idx_17376_primary ON rth.reset_password (reset_id);
+2026-05-13T16:44:09.607671Z NOTICE CREATE UNIQUE INDEX idx_17389_primary ON rth.step_tbl (step_id);
+2026-05-13T16:44:09.639675Z NOTICE CREATE UNIQUE INDEX idx_17376_reset_link ON rth.reset_password (reset_link);
+2026-05-13T16:44:09.643675Z NOTICE CREATE UNIQUE INDEX idx_17222_primary ON rth.manualtestdocs (manualtestid);
+2026-05-13T16:44:09.927711Z NOTICE CREATE UNIQUE INDEX idx_17369_primary ON rth.requirementversion_release_assoc (requirementversion_release_associd);
+2026-05-13T16:44:10.191745Z NOTICE CREATE UNIQUE INDEX idx_17458_primary ON rth.teststatus (teststatusid);
+2026-05-13T16:44:10.195745Z NOTICE CREATE UNIQUE INDEX idx_17369_reqversionid_releaseid ON rth.requirementversion_release_assoc (requirementversionid, releaseid);
+2026-05-13T16:44:10.207747Z NOTICE CREATE UNIQUE INDEX idx_17419_primary ON rth.testplanversion (testplanversionid);
+2026-05-13T16:44:10.579792Z NOTICE CREATE UNIQUE INDEX idx_17409_primary ON rth.testmachine (machineid);
+2026-05-13T16:44:10.787818Z NOTICE CREATE UNIQUE INDEX idx_17570_primary ON rth.test_function_assoc (test_func_assoc_id);
+2026-05-13T16:44:10.795819Z NOTICE CREATE INDEX idx_17409_projectid ON rth.testmachine (projectid);
+2026-05-13T16:44:10.847826Z NOTICE CREATE UNIQUE INDEX idx_17414_primary ON rth.testplan (testplanid);
+2026-05-13T16:44:11.131862Z NOTICE CREATE UNIQUE INDEX idx_17562_primary ON rth.testworkflow (uniquetestid);
+2026-05-13T16:44:11.307884Z NOTICE Completing PostgreSQL database.
+2026-05-13T16:44:11.307884Z NOTICE Reset sequences
+2026-05-13T16:44:13.448152Z NOTICE ALTER TABLE rth.bugcomponent ADD PRIMARY KEY USING INDEX idx_17107_primary;
+2026-05-13T16:44:13.664178Z NOTICE ALTER TABLE rth.requirementfunctionality ADD PRIMARY KEY USING INDEX idx_17332_primary;
+2026-05-13T16:44:13.952214Z NOTICE ALTER TABLE rth.teststep ADD PRIMARY KEY USING INDEX idx_17464_primary;
+2026-05-13T16:44:14.136238Z NOTICE ALTER TABLE rth.logs ADD PRIMARY KEY USING INDEX idx_17209_primary;
+2026-05-13T16:44:14.320261Z NOTICE ALTER TABLE rth.testarea ADD PRIMARY KEY USING INDEX idx_17397_primary;
+2026-05-13T16:44:14.512285Z NOTICE ALTER TABLE rth.testtype ADD PRIMARY KEY USING INDEX idx_17546_primary;
+2026-05-13T16:44:14.700308Z NOTICE ALTER TABLE rth.verifyresults ADD PRIMARY KEY USING INDEX idx_17600_primary;
+2026-05-13T16:44:14.956340Z NOTICE ALTER TABLE rth.requirementareacoverage ADD PRIMARY KEY USING INDEX idx_17319_primary;
+2026-05-13T16:44:15.200371Z NOTICE ALTER TABLE rth.requirement ADD PRIMARY KEY USING INDEX idx_17305_primary;
+2026-05-13T16:44:15.416398Z NOTICE ALTER TABLE rth.requirementdocumenttype ADD PRIMARY KEY USING INDEX idx_17324_primary;
+2026-05-13T16:44:15.596420Z NOTICE ALTER TABLE rth.requirementversion ADD PRIMARY KEY USING INDEX idx_17353_primary;
+2026-05-13T16:44:15.736434Z NOTICE ALTER TABLE rth.testenvironment ADD PRIMARY KEY USING INDEX idx_17404_primary;
+2026-05-13T16:44:15.884450Z NOTICE ALTER TABLE rth.project_user_assoc ADD PRIMARY KEY USING INDEX idx_17273_primary;
+2026-05-13T16:44:16.012463Z NOTICE ALTER TABLE rth.bugcategory ADD PRIMARY KEY USING INDEX idx_17102_primary;
+2026-05-13T16:44:16.236487Z NOTICE ALTER TABLE rth.requirementfunctionality_assoc ADD PRIMARY KEY USING INDEX idx_17339_primary;
+2026-05-13T16:44:16.468511Z NOTICE ALTER TABLE rth.testsuiteresults ADD PRIMARY KEY USING INDEX idx_17508_primary;
+2026-05-13T16:44:16.652528Z NOTICE ALTER TABLE rth.bughistory ADD PRIMARY KEY USING INDEX idx_17119_primary;
+2026-05-13T16:44:16.852549Z NOTICE ALTER TABLE rth.manualdoctype ADD PRIMARY KEY USING INDEX idx_17216_primary;
+2026-05-13T16:44:17.020567Z NOTICE ALTER TABLE rth.testsuite ADD PRIMARY KEY USING INDEX idx_17472_primary;
+2026-05-13T16:44:17.108576Z NOTICE ALTER TABLE rth.testsuite_requirement_assoc ADD PRIMARY KEY USING INDEX idx_17538_primary;
+2026-05-13T16:44:17.156581Z NOTICE ALTER TABLE rth.bug ADD PRIMARY KEY USING INDEX idx_17089_primary;
+2026-05-13T16:44:17.208586Z NOTICE ALTER TABLE rth."user" ADD PRIMARY KEY USING INDEX idx_17577_primary;
+2026-05-13T16:44:17.276593Z NOTICE ALTER TABLE rth.testset_testsuite_assoc ADD PRIMARY KEY USING INDEX idx_17447_primary;
+2026-05-13T16:44:17.356602Z NOTICE ALTER TABLE rth.testversion ADD PRIMARY KEY USING INDEX idx_17551_primary;
+2026-05-13T16:44:17.560623Z NOTICE ALTER TABLE rth.release_tbl ADD PRIMARY KEY USING INDEX idx_17285_primary;
+2026-05-13T16:44:17.696636Z NOTICE ALTER TABLE rth.project ADD PRIMARY KEY USING INDEX idx_17248_primary;
+2026-05-13T16:44:17.800646Z NOTICE ALTER TABLE rth.testset ADD PRIMARY KEY USING INDEX idx_17427_primary;
+2026-05-13T16:44:17.872654Z NOTICE ALTER TABLE rth.bugmonitor ADD PRIMARY KEY USING INDEX idx_17124_primary;
+2026-05-13T16:44:17.932660Z NOTICE ALTER TABLE rth.bugfile ADD PRIMARY KEY USING INDEX idx_17112_primary;
+2026-05-13T16:44:18.004667Z NOTICE ALTER TABLE rth.build ADD PRIMARY KEY USING INDEX idx_17139_primary;
+2026-05-13T16:44:18.084676Z NOTICE ALTER TABLE rth.bugassoc ADD PRIMARY KEY USING INDEX idx_17097_primary;
+2026-05-13T16:44:18.152683Z NOTICE ALTER TABLE rth.bugnote ADD PRIMARY KEY USING INDEX idx_17132_primary;
+2026-05-13T16:44:18.212690Z NOTICE ALTER TABLE rth.feedback ADD PRIMARY KEY USING INDEX idx_17168_primary;
+2026-05-13T16:44:18.284697Z NOTICE ALTER TABLE rth.field_tbl ADD PRIMARY KEY USING INDEX idx_17175_primary;
+2026-05-13T16:44:18.352704Z NOTICE ALTER TABLE rth.discussionpost ADD PRIMARY KEY USING INDEX idx_17160_primary;
+2026-05-13T16:44:18.464715Z NOTICE ALTER TABLE rth.individualrundocs ADD PRIMARY KEY USING INDEX idx_17194_primary;
+2026-05-13T16:44:18.576726Z NOTICE ALTER TABLE rth.guichecktable ADD PRIMARY KEY USING INDEX idx_17189_primary;
+2026-05-13T16:44:18.764745Z NOTICE ALTER TABLE rth.discussion ADD PRIMARY KEY USING INDEX idx_17152_primary;
+2026-05-13T16:44:18.852754Z NOTICE ALTER TABLE rth.function_tbl ADD PRIMARY KEY USING INDEX idx_17180_primary;
+2026-05-13T16:44:18.936763Z NOTICE ALTER TABLE rth.issues ADD PRIMARY KEY USING INDEX idx_17202_primary;
+2026-05-13T16:44:19.036774Z NOTICE ALTER TABLE rth.news ADD PRIMARY KEY USING INDEX idx_17236_primary;
+2026-05-13T16:44:19.088779Z NOTICE ALTER TABLE rth.requirementnotifications ADD PRIMARY KEY USING INDEX idx_17346_primary;
+2026-05-13T16:44:19.148786Z NOTICE ALTER TABLE rth.manualtestdocs_version ADD PRIMARY KEY USING INDEX idx_17229_primary;
+2026-05-13T16:44:19.228794Z NOTICE ALTER TABLE rth.screen ADD PRIMARY KEY USING INDEX idx_17384_primary;
+2026-05-13T16:44:19.324804Z NOTICE ALTER TABLE rth.reset_password ADD PRIMARY KEY USING INDEX idx_17376_primary;
+2026-05-13T16:44:19.416813Z NOTICE ALTER TABLE rth.manualtestdocs ADD PRIMARY KEY USING INDEX idx_17222_primary;
+2026-05-13T16:44:19.488820Z NOTICE ALTER TABLE rth.step_tbl ADD PRIMARY KEY USING INDEX idx_17389_primary;
+2026-05-13T16:44:19.552827Z NOTICE ALTER TABLE rth.requirementversion_release_assoc ADD PRIMARY KEY USING INDEX idx_17369_primary;
+2026-05-13T16:44:19.608832Z NOTICE ALTER TABLE rth.testplanversion ADD PRIMARY KEY USING INDEX idx_17419_primary;
+2026-05-13T16:44:19.668838Z NOTICE ALTER TABLE rth.teststatus ADD PRIMARY KEY USING INDEX idx_17458_primary;
+2026-05-13T16:44:19.732844Z NOTICE ALTER TABLE rth.testmachine ADD PRIMARY KEY USING INDEX idx_17409_primary;
+2026-05-13T16:44:19.784850Z NOTICE ALTER TABLE rth.testplan ADD PRIMARY KEY USING INDEX idx_17414_primary;
+2026-05-13T16:44:19.836855Z NOTICE ALTER TABLE rth.test_function_assoc ADD PRIMARY KEY USING INDEX idx_17570_primary;
+2026-05-13T16:44:19.892861Z NOTICE ALTER TABLE rth.testworkflow ADD PRIMARY KEY USING INDEX idx_17562_primary;
+2026-05-13T16:44:20.100883Z LOG report summary reset
